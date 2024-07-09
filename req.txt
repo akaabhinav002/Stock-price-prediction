@@ -1,0 +1,7 @@
+mathplot
+numpy
+pandas
+yfinance
+streamlit
+keras
+sklearn

@@ -1,0 +1,85 @@
+
+[     UTC     ] Logs for medicalai-jux2nachuav4djqbjmzo3a.streamlit.app/
+────────────────────────────────────────────────────────────────────────────────────────
+[10:34:02] 🖥 Provisioning machine...
+[10:34:02] 🎛 Preparing system...
+[10:34:02] ⛓ Spinning up manager process...
+[10:34:04] 🚀 Starting up repository: 'medicalai', branch: 'main', main module: 'app.py'
+[10:34:04] 🐙 Cloning repository...
+[10:34:04] 🐙 Cloning into '/mount/src/medicalai'...
+
+[10:34:04] 🐙 Cloned repository!
+[10:34:04] 🐙 Pulling code changes from Github...
+[10:34:05] 📦 Processing dependencies...
+Check if streamlit is installed
+cat: /mount/admin/install_path: No such file or directory
+
+──────────────────────────────── Installing Streamlit ──────────────────────────────────
+
+Using uv pip install.
+Resolved 41 packages in 301ms
+Downloaded 41 packages in 1.49s
+Installed 41 packages in 98ms
+ + altair==5.3.0
+ + attrs==23.2.0
+ + blinker==1.8.2
+ + cachetools==5.3.3
+ + certifi==2024.7.4
+ + charset-normalizer==3.3.2
+ + click==8.1.7
+ + gitdb==4.0.11
+ + gitpython==3.1.43
+ + idna==3.7
+ + jinja2==3.1.4
+ + jsonschema==4.22.0
+ + jsonschema-specifications==2023.12.1
+ + markdown-it-py==3.0.0
+ + markupsafe==2.1.5
+ + mdurl==0.1.2
+ + numpy==2.0.0
+ + packaging==24.1
+ + pandas==2.2.2
+ + pillow==10.4.0
+ + protobuf==5.27.2
+ + pyarrow==16.1.0
+ + pydeck[2024-07-04 10:34:07.509671] ==0.9.1
+ + pygments==2.18.0
+ + python-dateutil==2.9.0.post0
+ + pytz==2024.1
+ + referencing==0.35.1
+ + requests==2.32.3
+ + rich==13.7.1
+ + rpds-py==0.18.1
+ + six==1.16.0
+ + smmap==5.0.1
+ + streamlit==1.36.0
+ + tenacity==8.4.2
+ + toml==0.10.2
+ + toolz==0.12.1
+ + tornado==6.4.1
+ + typing-extensions[2024-07-04 10:34:07.512734] ==4.12.2
+ + tzdata==2024.1
+ + urllib3==2.2.2
+ + watchdog==4.0.1
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[10:34:08] 📦 Processed dependencies!
+cat: /mount/admin/install_path: No such file or directory
+
+
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.11/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:589 in _run_script                                      
+                                                                                
+  /mount/src/medicalai/app.py:3 in <module>                                     
+                                                                                
+     1 import streamlit as st                                                   
+     2 from pathlib import Path                                                 
+  ❱  3 import google.generativeai as genai                                      
+     4 from api import api_key                                                  
+     5                                                                          
+     6 genai.configure(api_key=api_key)                                         
+────────────────────────────────────────────────────────────────────────────────
+ModuleNotFoundError: No module named 'google.generativeai'
