@@ -1,4 +1,4 @@
-matplot
+matplotlib
 numpy
 pandas
 yfinance
